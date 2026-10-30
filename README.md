@@ -19,7 +19,7 @@ Screenshots will be added as the app grows.
 You need [Node.js](https://nodejs.org) (LTS) and the **Expo Go** app on your phone.
 
 ```bash
-git clone https://github.com/<your-username>/planinar.git
+git clone https://github.com/enisit/planinar.git
 cd planinar
 npm install
 npx expo start
@@ -54,4 +54,4 @@ Extras if time allows: a map of all start locations, total kilometres this year,
 
 ## Author
 
-Amra Hodžić · Student at International Burch University
+Enis Gegic
