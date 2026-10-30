@@ -13,8 +13,9 @@ export default function HikeCard({ hike }: Props) {
     >
       <Image source={{ uri: hike.photoUrl }} style={styles.image} />
       <View style={styles.info}>
-        <Text style={styles.name}>{hike.name}</Text>
-        <Text style={styles.mountain}>{hike.mountain}</Text>
+        <Text style={styles.title}>{hike.mountain}</Text>
+        <Text style={styles.description}>{hike.distanceKm} km</Text>
+        <Text style={styles.description}>{hike.difficulty}</Text>
       </View>
     </Pressable>
   );
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
   card: { borderRadius: 12, overflow: "hidden", backgroundColor: "#E6EEF7" },
   pressed: { opacity: 0.6 },
   image: { width: "100%", height: 200 },
-  name: { fontSize: 18, fontWeight: "bold", marginVertical: 8 },
-  mountain: { fontSize: 14, color: "#666" },
+  title: { fontSize: 14, color: "#666" },
   info: { padding: 16 },
+  description: { fontSize: 14, color: "#666" },
 });
