@@ -1,56 +1,57 @@
-# Welcome to your Expo app 👋
+# Planinar
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Planinar is a personal log of mountain hikes in Bosnia and Herzegovina. Hikers save each trip with photos and the start location, and look back at their season.
 
-## Get started
+Semester project for **IT 3003 Cross-Platform Development**, International Burch University.
 
-1. Install dependencies
+## Screenshots
 
-   ```bash
-   npm install
-   ```
+Screenshots will be added as the app grows.
 
-2. Start the app
+## Tech stack
 
-   ```bash
-   npx expo start
-   ```
+- [React Native](https://reactnative.dev) with [Expo](https://expo.dev) SDK 58
+- TypeScript
+- Expo Router for navigation
 
-In the output, you'll find options to open the app in a
+## Run the project
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+You need [Node.js](https://nodejs.org) (LTS) and the **Expo Go** app on your phone.
 
 ```bash
-npm run reset-project
+git clone https://github.com/<your-username>/planinar.git
+cd planinar
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+Scan the QR code in the terminal with the Camera app (iPhone) or from inside Expo Go (Android). If the phone cannot connect, start the server with `npx expo start --tunnel`.
 
-### Other setup steps
+## Project structure
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+```
+src/
+  app/            Screens (Expo Router)
+  components/     Reusable components, such as HikeCard and HikeDetails
+  constants/      Theme: colours and spacing
+  data/           Mock data, used until the backend is added
+  types.ts        Shared TypeScript types
+```
 
-## Learn more
+## Features
 
-To learn more about developing your project with Expo, look at the following resources:
+- [x] List of hikes (mock data)
+- [x] Hike card with photo, mountain, distance and difficulty
+- [ ] Hike details screen
+- [ ] Tabs for Hikes and Profile
+- [ ] Add and edit a hike, with validation
+- [ ] Photo from the camera or gallery
+- [ ] Data saved on the device
+- [ ] Login and hikes stored in Supabase
+- [ ] Installable Android build
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Extras if time allows: a map of all start locations, total kilometres this year, filtering by mountain.
 
-## Join the community
+## Author
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Amra Hodžić · Student at International Burch University
