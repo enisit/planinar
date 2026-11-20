@@ -42,6 +42,10 @@ src/
 
 - [x] List of hikes (mock data)
 - [x] Hike card with photo, mountain, distance and difficulty
+- [x] Light and dark theme, responsive grid (1–3 columns)
+- [x] List screen with FlatList: loading, error and empty states, pull-to-refresh
+- [x] Filter by difficulty, sort by newest or longest
+- [x] Long press to delete a hike (with confirmation)
 - [ ] Hike details screen
 - [ ] Tabs for Hikes and Profile
 - [ ] Add and edit a hike, with validation

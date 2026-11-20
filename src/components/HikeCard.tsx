@@ -14,13 +14,19 @@ import {
 type Props = {
   hike: Hike;
   style?: StyleProp<ViewStyle>;
+  onLongPress?: () => void;
 };
 
-export default function HikeCard({ hike, style }: Props) {
+export default function HikeCard({ hike, style, onLongPress }: Props) {
   const theme = useTheme();
   return (
     <Pressable
       onPress={() => console.log(hike.name)}
+      onLongPress={onLongPress}
+      accessibilityRole="button"
+      accessibilityLabel={`${hike.name}, ${hike.mountain}, ${hike.distanceKm} kilometres, ${hike.difficulty}`}
+      accessibilityHint="Long press to delete"
+      android_ripple={{ color: theme.border }}
       style={({ pressed }) => [
         styles.card,
         { backgroundColor: theme.card, borderColor: theme.border },

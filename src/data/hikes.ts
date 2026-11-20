@@ -18,7 +18,7 @@ export const hikes: Hike[] = [
     mountain: "Vranica",
     date: "2026-07-05",
     distanceKm: 8.2,
-    difficulty: "easy",
+    difficulty: "hard",
     photoUrl: "https://picsum.photos/seed/vranica/600/400",
     notes:
       "Short and relaxed walk. Lunch at the lake with the mountain huts around it.",
